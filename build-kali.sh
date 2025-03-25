@@ -11,4 +11,4 @@ sudo rm -rf ./kali-root &&\
 TAG=$(sudo docker run -t -i linuxkonsult/kali awk '{print $NF}' /etc/debian_version | sed 's/\r$//' ) &&\
 echo "Tagging kali with $TAG" &&\
 sudo docker tag linuxkonsult/kali:latest linuxkonsult/kali:$TAG &&\
-echo "Build OK" || echo "Build failed!"
+echo "Build OK" || echo "Deez Nuts!"
